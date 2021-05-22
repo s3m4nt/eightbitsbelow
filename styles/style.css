@@ -1,0 +1,162 @@
+/**/
+/**/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  /* border: 1px black solid; */
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: rgb(68, 182, 224);
+}
+
+#container {
+  margin-top: 40px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: rgb(167, 210, 224);
+}
+
+#header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: rgb(68, 182, 224);
+}
+
+#title {
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgb(180, 180, 255);
+  padding-bottom: 10px;
+}
+
+#score {
+  font-size: 32px;
+}
+
+#scoreboard {
+  font-size: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: rgb(137, 216, 245);
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  margin: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  text-shadow: 2px 2px 4px rgb(180, 180, 255);
+}
+
+button:hover {
+  background: rgb(63, 171, 211);
+}
+
+/* Specific styles for intro page */
+.intro-container {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 700px;
+  border: 4px white solid;
+  padding-bottom: 6px;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 25px;
+  padding: 15px;
+  border-bottom: 4px white solid;
+}
+
+.intro-story {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 250px 1fr;
+}
+
+.intro-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#intro-button {
+  width: 300px;
+  font-size: 22px;
+  background: red;
+}
+
+#intro-button:hover {
+  background: rgb(216, 1, 1);
+}
+.intro-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.intro {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  text-shadow: 2px 2px 4px rgb(180, 180, 255);
+  padding: 0px 20px 0px 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgb(180, 180, 255);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+span {
+  font-size: 18px;
+}
+
+.button-bar {
+  /* border: 1px solid red; */
+  display: inline-block;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: left;
+  margin: 0 auto;
+}
+
+.button-bar button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 10px;
+  height: 30px;
+}
