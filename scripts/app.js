@@ -186,13 +186,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         // Collision logic
         // https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
 
-        // if j collides w plastic add points
+        // if j collides w plastic add points + heart
         if (
           jacqueX < plasticX + 25 + plastic.width &&
           jacqueX + jacque.width > plasticX &&
           jacqueY < plasticY + plastic.height &&
           jacqueY + jacque.height > plasticY
         ) {
+          //
+          console.log('plasti collide')
+          ctx.drawImage(heart, jacqueX + jacque.width, jacqueY)
+          //
           plasticX = canvas.width + Math.random() * 300
           plasticY = Math.random() * canvas.height
           sfx.trash.play()
