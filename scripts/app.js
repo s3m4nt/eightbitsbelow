@@ -194,11 +194,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
           jacqueY + jacque.height > plasticY
         ) {
           //
-          console.log('plasti collide')
+          console.log(`gameState = ${gameState}`)
+          // setTimeout(function () {
           ctx.drawImage(heart, jacqueX + jacque.width, jacqueY)
+          //   console.log('setTimeout 1s')
+          // }, 1000)
           //
           plasticX = canvas.width + Math.random() * 300
-          plasticY = Math.random() * canvas.height
+          plasticY = Math.random() * canvas.heightas
           sfx.trash.play()
           gameScore += 10
           console.log(gameScore)
