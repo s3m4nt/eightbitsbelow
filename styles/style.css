@@ -7,6 +7,7 @@
 * {
   font-family: 'Press Start 2P', cursive;
   color: white;
+  /* border: 1px solid black; */
 }
 
 body {
@@ -81,6 +82,12 @@ button:hover {
   width: 700px;
   border: 4px white solid;
   padding-bottom: 6px;
+}
+
+.intro-footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
 }
 
 .intro-header {
