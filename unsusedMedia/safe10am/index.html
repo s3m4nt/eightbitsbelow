@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style></style>
     <meta charset="UTF-8" />
-    <title>8-BITS BELOW - P1 Game - SEI503 P1</title>
+    <title>P1 Game - SEI503</title>
     <link href="./styles/style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <style>
+      #canvas {
+      }
+    </style>
   </head>
   <body>
+    <!-- <div id="overlay"> -->
+
     <div id="container">
       <div id="header">
         <div id="title">8-BITS BELOW</div>
+
         <div id="scoreboard">
           <span id="score2"><!--Score:--></span>
           <span id="score"><!--0--></span>
@@ -20,10 +28,7 @@
         <canvas id="canvas"></canvas>
       </div>
     </div>
-    <div class="button-bar">
-      <button class="mute">audioMute</button>
-      <button class="unmute">audioUnmute</button>
-    </div>
+    <!-- </div> -->
     <script src="./scripts/app.js"></script>
   </body>
 </html>

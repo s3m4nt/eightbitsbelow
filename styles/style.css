@@ -7,7 +7,6 @@
 * {
   font-family: 'Press Start 2P', cursive;
   color: white;
-  /* border: 1px black solid; */
 }
 
 body {
@@ -99,13 +98,6 @@ button:hover {
   grid-template-columns: 250px 1fr;
 }
 
-.intro-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 #intro-button {
   width: 300px;
   font-size: 22px;
@@ -145,18 +137,25 @@ span {
 }
 
 .button-bar {
-  /* border: 1px solid red; */
-  display: inline-block;
-  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(1, 1fr);
-  justify-content: left;
-  margin: 0 auto;
+  justify-content: right;
 }
 
 .button-bar button {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  display: grid;
+  padding: 0;
+  margin: 0;
   font-size: 10px;
-  height: 30px;
+  padding-top: 9px;
+  background: rgb(68, 182, 224);
+}
+
+.button-bar .mute {
+  padding-right: 12px;
+}
+
+.button-bar button:hover {
+  background: rgb(62, 165, 202);
 }
