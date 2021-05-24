@@ -121,6 +121,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // jacque start point
     let jacqueX = 12
     let jacqueY = canvas.height / 2 - jacque.height / 2 - 25
+
+    let heartX = -1000
+    let heartY = -1000
+
     // fish start point
 
     // Random fish array
@@ -195,13 +199,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
         ) {
           //
           console.log(`gameState = ${gameState}`)
-          // setTimeout(function () {
-          ctx.drawImage(heart, jacqueX + jacque.width, jacqueY)
-          //   console.log('setTimeout 1s')
-          // }, 1000)
-          //
+          heartX = plasticX
+          heartY = plasticY
+          setTimeout(function () {
+            heartX = -1000
+            heartY = -1000
+          }, 600)
+          // ctx.drawImage(heart, jacqueX + jacque.width, jacqueY)
+
           plasticX = canvas.width + Math.random() * 300
-          plasticY = Math.random() * canvas.heightas
+          plasticY = Math.random() * canvas.height
           sfx.trash.play()
           gameScore += 10
           console.log(gameScore)
@@ -264,6 +271,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
       // Draw J
       ctx.drawImage(jacque, jacqueX, jacqueY)
+      ctx.drawImage(heart, heartX, heartY)
 
       drawImages()
     }
