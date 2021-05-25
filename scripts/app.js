@@ -19,15 +19,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   let sfx = {
     dead: new Howl({
-      src: '../audio/dead1.mp3',
+      src: './audio/dead1.mp3',
       volume: 0.5,
     }),
     trash: new Howl({
-      src: '../audio/points.mp3',
+      src: './audio/points.mp3',
       volume: 0.4,
     }),
     theme: new Howl({
-      src: '../audio/main-theme.mp3',
+      src: './audio/main-theme.mp3',
       volume: 0.4,
     }),
   }
@@ -87,20 +87,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // create new images and path
   let jacque = new Image()
-  jacque.src = '../images/SubmarineJacquesYELLOW4.png'
+  jacque.src = './images/SubmarineJacquesYELLOW4.png'
   let fish = new Image()
-  fish.src = '../images/Fish012.png'
+  fish.src = './images/Fish012.png'
   let plastic = new Image()
-  plastic.src = '../images/PlasticBottle2.png'
+  plastic.src = './images/PlasticBottle2.png'
   let seaFloor = new Image()
-  seaFloor.src = '../images/SeaFloor.png'
+  seaFloor.src = './images/SeaFloor.png'
   let seaTop = new Image()
-  seaTop.src = '../images/SeaTop.png'
+  seaTop.src = './images/SeaTop.png'
   // Collision graphics
   let bomb2 = new Image()
-  bomb2.src = '../images/bomb2.png'
+  bomb2.src = './images/bomb2.png'
   let heart = new Image()
-  heart.src = '../images/heart.png'
+  heart.src = './images/heart.png'
 
   // draw and place the static background images
   function drawImages() {
