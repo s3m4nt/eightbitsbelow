@@ -19,15 +19,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   let sfx = {
     dead: new Howl({
-      src: '../audio/dead1.mp3',
+      src: './audio/dead1.mp3',
       volume: 0.5,
     }),
     trash: new Howl({
-      src: '../audio/points.mp3',
+      src: './audio/points.mp3',
       volume: 0.4,
     }),
     theme: new Howl({
-      src: '../audio/main-theme.mp3',
+      src: './audio/main-theme.mp3',
       volume: 0.4,
     }),
   }
