@@ -23,15 +23,13 @@ In this classic "side-scroller" game, Jacque, a tireless 8-bit caretaker of the 
 - Instead of one type of sea SeaTrash - Evian bottles, Starbucks straws, and Ralph’s shopping bags could be included. Also include occasional sea floor debris.
 - Instead of one type of sea SeaFriend - various marine life, fish, shark, octopus – have varying points value could be included.
 
-## Extras ##
-- Various point bonuses are awarded when airplanes or boats are crossing the screen but double-points when the rarely seen International Space Station crosses the sky!
 
 ## Wireframes ##
 ![IMG_0307](https://user-images.githubusercontent.com/83609467/118336292-3a536400-b4c6-11eb-8c50-f81611695550.jpg)
 ![IMG_0306](https://user-images.githubusercontent.com/83609467/118336297-3b849100-b4c6-11eb-9aa1-08323a41d0c5.jpg)
 
 ## Tech Stack ##
-Vanilla HTML, CSS, JavaScript, HTML Canvas, Howler
+HTML, CSS, JavaScript, HTML Canvas, Howler
 
 
 
